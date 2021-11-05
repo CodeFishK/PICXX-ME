@@ -1,0 +1,22 @@
+[
+    {
+      "id": "sukebei",
+      "name": "Sukebei Nyaa",
+      "proxy": true,
+      "url": "https://sukebei.nyaa.si/",
+      "paths": {
+        "preset": "/search/c_{p}_0_k_{k}"
+      },
+      "xpath": {
+        "group": "//div[@class='table-responsive']/table/tbody/tr",
+        "magnet": "./td[3]/a[2]/@href",
+        "name": "./td[2]/a",
+        "size": "./td[4]",
+        "date": "./td[5]",
+        "hot": "./td[8]",
+        "detail": {
+          "files": "//div[@class=\"torrent-file-list panel-body\"]/ul/li"
+        }
+      }
+    }
+  ]
